@@ -1,0 +1,47 @@
+html{
+  background-color: rgb(63,104,216);
+  font-family: 'Be Vietnam', sans-serif;
+  color: white;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100px;
+}
+
+
+
+.navbar-item:hover{
+  opacity: 0.6;
+}
+
+nav span a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+
+}
+
+nav button {
+  padding: 8px 35px;
+  margin-left: 18px;
+  background-color: #4169e1;
+  border:none;
+  border-radius: 100px;
+  box-shadow: 0 5px 20px 0px rgba(0,0,0,0.3);
+}
+
+.signup-btn{
+  background-color: rgba(248,46,46,0.9);
+}
+
+.text-main{
+  display: grid;
+  justify-content: space-around;
+  grid-template-rows:  auto auto;
+  margin-left: 200px;
+}
