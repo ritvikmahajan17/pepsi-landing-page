@@ -4,6 +4,11 @@ html{
   color: white;
 }
 
+header{
+  background-color: black;
+  margin:-8px;
+}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -13,21 +18,20 @@ nav{
   height: 100px;
 }
 
-
-
 .navbar-item:hover{
   opacity: 0.6;
 }
 
 nav span a{
+  padding: 5px;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
 nav button {
-  padding: 8px 35px;
+  padding: 8px 30px;
   margin-left: 18px;
   background-color: #4169e1;
   border:none;
