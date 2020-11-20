@@ -15,7 +15,7 @@ nav{
   flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
-  height: 100px;
+  height: 120px;
 }
 
 .navbar-item:hover{
@@ -23,25 +23,31 @@ nav{
 }
 
 nav span a{
+  text-transform: capitalize;
   padding: 5px;
   text-decoration: none;
   color: white;
   font-size: 18px;
-
 }
 
+
+
 nav button {
-  padding: 8px 30px;
+  padding: 15px 40px;
   margin-left: 18px;
   background-color: #4169e1;
   border:none;
   border-radius: 100px;
-  box-shadow: 0 5px 20px 0px rgba(0,0,0,0.3);
+  font-size: 16px;
+
 }
 
 .signup-btn{
   background-color: rgba(248,46,46,0.9);
+  margin-left: -50px;
 }
+
+
 
 .text-main{
   display: grid;
