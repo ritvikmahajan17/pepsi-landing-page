@@ -4,8 +4,8 @@ html{
   color: white;
 }
 
+
 header{
-  background-color: black;
   margin:-8px;
 }
 
@@ -14,44 +14,132 @@ nav{
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  background-color: black;
   flex-wrap: nowrap;
-  height: 120px;
+  height: 6.5em;
 }
-
-.navbar-item:hover{
+.btn:hover,.navbar-item:hover{
   opacity: 0.6;
 }
 
-nav span a{
+nav a{
   text-transform: capitalize;
-  padding: 5px;
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 1.2em;
+  flex-shrink: 0;
+}
+
+.navbar-btn{
+  display: flex;
+  justify-content: space-between;
 }
 
 
-
-nav button {
-  padding: 15px 40px;
-  margin-left: 18px;
+.btn {
+  padding: 1em 2.5em;
   background-color: #4169e1;
   border:none;
   border-radius: 100px;
-  font-size: 16px;
-
+  font-size: 1em;
+  flex-shrink: 0;
 }
 
 .signup-btn{
   background-color: rgba(248,46,46,0.9);
-  margin-left: -50px;
+  margin-left: 1em;
 }
 
+.get-started-btn{
+  background-color: rgba(248,46,46,0.9);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 10%
 
+}
 
-.text-main{
+.main-content{
   display: grid;
-  justify-content: space-around;
-  grid-template-rows:  auto auto;
-  margin-left: 200px;
+  margin-top: 200px;
+  grid-gap: 0px 10%;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 13%;
+}
+
+div h1{
+  font-size: 63px;
+}
+
+div p{
+  margin-top: 10px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.wave{
+  position: absolute;
+  bottom:0px;
+  left:0;
+  width:100%;
+  height:100px;
+
+  background: url("../image/waves.png");
+  background-size: 1000px 100px;
+}
+
+.wave.wave1{
+  animation: wave-front 30s linear infinite;
+  z-index:1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom:0px;
+}
+
+.wave.wave2{
+  animation: wave-back 15s linear infinite;
+  z-index:999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom:10px;
+}
+
+.wave.wave3{
+  animation: wave-front 30s linear infinite;
+  z-index:1000;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom:15px ;
+}
+
+.wave.wave4{
+  animation: wave-back 5s linear infinite;
+  z-index:997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom:20px;
+}
+
+  @keyframes wave-front {
+
+  0%{
+    background-position-x:0;
+  }
+
+  100%{
+    background-position-x: 1000px;
+  }
+
+}
+
+  @keyframes wave-back {
+
+    0%{
+      background-position-x:0;
+    }
+
+    100%{
+      background-position-x: -1000px;
+    }
+
 }
